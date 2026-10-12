@@ -1,5 +1,13 @@
 # x39tool
 
+> **Credit:** nearly all of the protocol knowledge behind this tool comes from
+> **[dokutan/mouse_m908](https://github.com/dokutan/mouse_m908)** (GPL-3.0), which reverse-engineered
+> Redragon's mouse protocol. This mouse's firmware is a clone of the **Redragon M908 Impact** protocol, so
+> their command format, memory layout and button/key code tables apply here almost unchanged.
+> This project only adapts that work to one specific model: it confirms everything on the hardware and fills
+> in what differs on this firmware (lighting modes, brightness/speed ranges, read/write session behaviour).
+> If your mouse is a real Redragon, use mouse_m908 instead.
+
 A Linux configurator (GUI + Python library) for a cheap MMO gaming mouse that identifies as
 **`36b7:fd13` "ARM USB Gaming Mouse"**: a **Puya PY32**-based mouse sold on Temu as the
 **E-YOOSO X-39 Pro**.
@@ -11,14 +19,6 @@ A Linux configurator (GUI + Python library) for a cheap MMO gaming mouse that id
 Features: DPI stages (enable, level, current stage), polling rate, lighting (off / solid / breathing /
 rainbow / blinking, colour, speed, brightness), button remapping (mouse functions, media keys, keyboard keys
 with modifiers) and active profile, for all 5 on-board profiles. Settings are stored on the mouse.
-
-## Credits: protocol source
-
-This firmware clones the protocol of the **Redragon M908 Impact** (Holtek `04d9:fc4d`). The command format,
-memory layout and button/key code tables come from
-**[dokutan/mouse_m908](https://github.com/dokutan/mouse_m908)** (GPL-3.0), which reverse-engineered the
-Redragon software. The lighting modes, brightness/speed ranges and the read/write session behaviour differ on
-this firmware and were worked out on the device. See [PROTOCOL.md](PROTOCOL.md).
 
 ## Setup
 

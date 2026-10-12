@@ -1,5 +1,9 @@
 # Protocol notes: Puya-based "ARM USB Gaming Mouse" (36b7:fd13)
 
+> Based on the Redragon protocol work of **[dokutan/mouse_m908](https://github.com/dokutan/mouse_m908)**.
+> Their M908 documentation covers almost all of this. These notes record what was confirmed on this
+> clone and what differs.
+
 Everything here was confirmed on the device unless marked otherwise.
 
 ## Identification
